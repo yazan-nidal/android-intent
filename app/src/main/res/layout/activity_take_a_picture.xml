@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/PICindex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D72DC39"
+        tools:context=".Take_a_picture">
+
+        <Button
+            android:id="@+id/takeG"
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:text="Gallery"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_menu_gallery"
+            app:iconGravity="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/clearPIC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/takeP"
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:text="Take Shot"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_menu_camera"
+            app:iconGravity="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/takeG"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/clearPIC"
+            android:layout_width="180dp"
+            android:layout_height="63dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="Clear"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:iconGravity="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/nb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#CDDC39"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/takeP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

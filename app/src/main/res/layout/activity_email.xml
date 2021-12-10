@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/EMAILindex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D72DC39"
+        tools:context=".Email">
+
+        <EditText
+            android:id="@+id/EMAILemail3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@android:drawable/sym_action_email"
+            android:drawableTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="email1,email2,email3, ....etc"
+            android:inputType="textMultiLine"
+            android:textColor="@color/design_default_color_error"
+            android:textColorHighlight="@color/teal_700"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILtw4" />
+
+        <EditText
+            android:id="@+id/EMAILemail2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@android:drawable/sym_action_email"
+            android:drawableTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="email1,email2,email3, ....etc"
+            android:inputType="textMultiLine"
+            android:textColor="@color/design_default_color_error"
+            android:textColorHighlight="@color/teal_700"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILtw3" />
+
+        <TextView
+            android:id="@+id/EMAILtw3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text='Enter List of Email "CC": '
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILemail" />
+
+        <TextView
+            android:id="@+id/EMAILtw4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text='Enter List of Email "BCC": '
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILemail2" />
+
+        <Button
+            android:id="@+id/EMAILsend"
+            android:layout_width="133dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/design_default_color_secondary_variant"
+            android:text="Send"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_menu_send"
+            app:iconGravity="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/nb"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILmess" />
+
+        <Button
+            android:id="@+id/EMAILclear"
+            android:layout_width="133dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@color/design_default_color_error"
+            android:text="Clear"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            app:icon="@android:drawable/ic_menu_delete"
+            app:iconGravity="textEnd"
+            app:layout_constraintBottom_toTopOf="@+id/nb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILmess" />
+
+        <EditText
+            android:id="@+id/EMAILsubject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableEnd="?android:attr/fingerprintAuthDrawable"
+            android:drawableTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="enter name of Subject"
+            android:inputType="text"
+            android:textColor="@color/design_default_color_error"
+            android:textColorHighlight="@color/teal_700"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILtw" />
+
+        <TextView
+            android:id="@+id/EMAILtw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Subject:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/EMAILtw2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text='Enter List of Email "send to": '
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILsubject" />
+
+        <EditText
+            android:id="@+id/EMAILemail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@android:drawable/sym_action_email"
+            android:drawableTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="email1,email2,email3, ....etc"
+            android:inputType="textMultiLine"
+            android:textColor="@color/design_default_color_error"
+            android:textColorHighlight="@color/teal_700"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILtw2" />
+
+
+        <TextView
+            android:id="@+id/EMAILtw5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Enter Messages : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/purple_200"
+            android:textStyle="bold|italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILemail3" />
+
+        <EditText
+            android:id="@+id/EMAILmess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@android:drawable/stat_notify_chat"
+            android:drawableTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="enter message text"
+            android:inputType="textMultiLine"
+            android:textColor="@color/design_default_color_error"
+            android:textColorHighlight="@color/teal_700"
+            android:textSize="22sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EMAILtw5" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#CDDC39"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

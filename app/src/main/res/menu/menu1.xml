@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/it1"
+        android:icon="@drawable/pt1"
+        android:title="send SMS" />
+    <item
+        android:id="@+id/it2"
+        android:icon="@drawable/pt2"
+        android:title="send E-mail" />
+    <item
+        android:id="@+id/it3"
+        android:icon="@drawable/pt3"
+        android:title="Locate place" />
+    <item
+        android:id="@+id/it4"
+        android:icon="@drawable/pt4"
+        android:title="Take a picture" />
+</menu>
